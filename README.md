@@ -13,3 +13,8 @@ function y() {
 	command rm -f -- "$tmp"
 }
 ```
+
+- Para a configuração do niri tem o arquivo config.kdl com uma configuração básica ajustada
+```bash
+cp -ru config.kdl ~/.config/niri
+```
