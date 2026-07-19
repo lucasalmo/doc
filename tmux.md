@@ -5,18 +5,24 @@ tmux source-file ~/.tmux.conf
 
 - Posicionando barra no topo
 ```bash
-nvim ~/.tmux.conf
+vim ~/.tmux.conf
+```
+```bash
 set-option -g status-position top
 ```
 - Ativando navegação com teclas do vim
 ```bash
-nvim ~/.tmux.conf
+vim ~/.tmux.conf
+```
+```bash
 set -g mode-keys vi
 ```
 - Copiando texto para a área de transferência e não apenas para o buffer
 É necessário ter o `wl-clipboad` instalado no sistema
 ```bash
-nvim ~/.tmux.conf
+vim ~/.tmux.conf
+```
+```bash
 bind-key -T copy-mode-vi Enter send-keys -X copy-pipe-and-cancel "xclip -selection clipboard -in"
 ```
 - Modo de navegação pela saída no terminal
