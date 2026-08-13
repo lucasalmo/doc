@@ -18,3 +18,9 @@ function y() {
 ```bash
 cp -ru config.kdl ~/.config/niri
 ```
+
+- Pacotes importantes a serem instalados
+```bash
+sudo pacman -S docker git github-cli vim base-devel fakeroot
+```
+
